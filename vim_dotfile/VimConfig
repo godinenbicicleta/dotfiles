@@ -1,0 +1,53 @@
+syntax on
+"get indentation to follow PEP8 standards:
+au BufNewFile,BufRead *.py
+	\ set tabstop=4 |
+	\ set softtabstop=4 |
+	\ set shiftwidth=4 |
+	\ set textwidth=79 |
+	\ set expandtab |
+	\ set autoindent |
+	\ set fileformat=unix |
+	\ set nu |
+	\ set ruler
+
+
+au BufNewFile,BufRead *.js
+	\ set tabstop=2 |
+	\ set softtabstop=2 |
+	\ set shiftwidth=2 
+	\ set nu |
+	\ set autoindent
+	\ set ruler
+
+au BufNewFile,BufRead *.html
+	\ set tabstop=2 |
+	\ set softtabstop=2 |
+	\ set shiftwidth=2 |
+	\ set nu
+
+au BufNewFile,BufRead *.css
+	\ set tabstop=2 |
+	\ set softtabstop=2 |
+	\ set shiftwidth=2 |
+	\ set nu
+
+set ruler
+
+set encoding=utf-8
+
+set background=dark
+
+"This would add the line number:
+"set nu
+
+
+"incremental search:
+set incsearch
+
+"show partial command keys in the status line:
+set sc
+
+"automatically set the indent of a new line:
+set autoindent
+
